@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #3E2F2F;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #F9EFEF;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #F9EFEF;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #FFC107;
+}
+
+section {
+    padding: 50px 50px;
+}
+
+.main {
+    background-color: #2b2302;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    background: url(images/photo_5775929177541820387_w.jpg) no-repeat;
+    background-size: cover;
+}
+
+.main h2 {
+    color: #F9EFEF;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin: 10px;
+    color: #2b2302;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.main h2 span .AI {
+    color: #FFC107;
+}
+
+.main h2 span .web {
+    font-size: 1.5em;
+}
+
+.main h3 {
+    color: #F9EFEF;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #2b2302;
+    background-color: #FFC107;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.9375em 2.184em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+}
+
+.main-btn:hover {
+    background-color: #E89C06;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #FFC107;
+    font-size: 2em;
+    padding-right: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contant {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: #F9EFEF;
+    background-color: #4CAF50;
+    width: 21.25em;
+    box-shadow: 0 0.5px 25px rgba(1 1 1/ 100%);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    transition: background-color 0.3s ease, transform 0.5s ease;
+}
+
+.card:hover {
+    background-color: #45A049;
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #FFC107;
+    text-align: center;
+    font-size: 13em;
+}
+
+.discripe {
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.Projects {
+    background-color: #1d2730;
+}
+
+.Projects .contant {
+    margin-top: 35px;
+}
+
+.pro-card {
+    background-color: #6f5b0b;
+    border: 2px solid #f1e3ad;
+    border-radius: 20px;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.7s ease;
+}
+
+.pro-card:hover {
+    transform: scale(1.1);
+}
+
+.pro-card:hover img {
+    opacity: 0.9;
+}
+
+.image img {
+    width: 100%;
+}
+
+.pro-detials {
+    padding: 1em;
+}
+
+.code-source {
+    text-decoration: none;
+    color: #FFC107;
+}
+
+.code-source:hover {
+    color: #E89C06;
+}
+
+.pro-dis {
+    justify-content: space-between;
+    display: flex;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.Contact,
+.icon {
+    font-size: 1.5em;
+}
+
+.Contact .discripe h3 {
+    font-size: 1.5em;
+}
+
+.Contact .discripe p {
+    font-size: 1.8em;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: #F9EFEF;
+    padding: 2.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title span {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #FFC107;
+}
+
+.footer .social-icons {
+    font-size: 0.8em;
+    padding: 0 12px 0 0;
+}
+
+/* Media queries for responsive design */
+
+/* Small screens (e.g., mobile devices) */
+@media screen and (max-width: 575px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .navigation a {
+        padding-left: 15px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .main h2 {
+        font-size: 1.5em;
+    }
+
+    .main h2 span {
+        margin: 10px;
+        font-size: 1.7em;
+    }
+}
+
+/* Medium screens (e.g., tablets) */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .navigation a {
+        padding-left: 20px;
+    }
+
+    section {
+        padding: 60px 40px;
+    }
+
+    .main h2 {
+        font-size: 1.8em;
+    }
+
+    .main h2 span {
+        margin: 15px;
+        font-size: 2em;
+    }
+}
